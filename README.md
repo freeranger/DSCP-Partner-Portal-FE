@@ -1,28 +1,38 @@
-# DSCPPartnerPortalFrontEnd
+# DSCP Partner Portal Front-End
+This front end, built on Angular 4 with the [Angular CLI](https://github.com/angular/angular-cli), will consume the DSCP Partner Portal API. All routes for this application should be protected via JWT, with no public API access. You will therefore need to authenticate any users before pulling data from the API.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+This project is being built for the Downtown St. Charles Partnership (DSCP), a non-profit focused on the economic viability of downtown St. Charles, IL.
 
-## Development server
+## Project Scope
+The purpose of this project is to provide the DSCP with an internal application to manage their contacts and Partners (members). It will also allow them to create groups or committees to which they can add and remove contacts from.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## API
+The API for this project is hosted in a separate [GitHub repository](https://github.com/commitshappen/DSCP-Partner-Portal-API). If you're working on building services, you will need to clone the API and run it on your local machine. Simply follow the instructions of that README to get started.
 
-## Code scaffolding
+## Contributing
+We'd love to have your help! Check out our Waffle Board to see where the project currently sits and what we're looking for help on. Do you have an idea that we maybe haven't thought of? That's cool too! Submit a ticket and we'll take a look :)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+You can find the design prototype for the front-end by viewing the [design prototype](https://xd.adobe.com/view/287c1243-35f0-49f2-be73-94331ea84aae).
 
-## Build
+## Project Setup
+### Step 1: Install Yarn (if neccessary)
+The Angular CLI depends on [yarn](https://yarnpkg.com/en/), so you will need to have it installed on your computer. Simply follow the [installation instructions](https://yarnpkg.com/en/docs/install) provided by yarn for your machine. 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+### Step 2: Clone the project
+Before you can get started, you need to download the project files. Assuming you have git already installed, simply clone this repo and cd into it using the terminal.
+```bash
+$ git clone https://github.com/commitshappen/dscp-partner-portal-fe.git
+$ cd dscp-partner-portal-fe
+```
 
-## Running unit tests
+### Step 3: Install dependencies
+Download all of the packages to make sure your clone works like it's supposed to.
+```bash
+$ yarn
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Step 4: Starting the server
+The Angular CLI leverages webpack, which mean that there's a live-refresh server build in. Yay! Simply run the following command, which will start the server and open up the app in the browser:
+```bash
+$ ng serve --open
+```
