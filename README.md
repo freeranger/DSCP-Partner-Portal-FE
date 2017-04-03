@@ -20,20 +20,28 @@ You can find the design prototype for the front-end by viewing the [design proto
 ### Step 1: Install Yarn (if neccessary)
 The Angular CLI depends on [yarn](https://yarnpkg.com/en/), so you will need to have it installed on your computer. Simply follow the [installation instructions](https://yarnpkg.com/en/docs/install) provided by yarn for your machine. 
 
-### Step 2: Clone the project
+### Step 2: Install Angular CLI (if neccessary)
+The Angular CLI installation boils down to having Node v6.9.0 or higher on your machine, as well as NPM 3 or higher, and running the following command:
+```bash
+$ npm i -g @angular/cli
+```
+
+The CLI has tons of great features, including [generators](https://github.com/angular/angular-cli#generating-components-directives-pipes-and-services) for components, modules, services, directives, and more. 
+
+### Step 3: Clone the project
 Before you can get started, you need to download the project files. Assuming you have git already installed, simply clone this repo and cd into it using the terminal.
 ```bash
 $ git clone https://github.com/commitshappen/dscp-partner-portal-fe.git
 $ cd dscp-partner-portal-fe
 ```
 
-### Step 3: Install dependencies
+### Step 4: Install dependencies
 Download all of the packages to make sure your clone works like it's supposed to.
 ```bash
 $ yarn
 ```
 
-### Step 4: Starting the server
+### Step 5: Starting the server
 The Angular CLI leverages webpack, which mean that there's a live-refresh server build in. Yay! Simply run the following command, which will start the server and open up the app in the browser:
 ```bash
 $ ng serve --open
