@@ -1,3 +1,5 @@
+[![Build Status](https://semaphoreci.com/api/v1/commitshappen/dscp-partner-portal-fe/branches/master/shields_badge.svg)](https://semaphoreci.com/commitshappen/dscp-partner-portal-fe) [![GitHub issues](https://img.shields.io/github/issues/commitshappen/DSCP-Partner-Portal-FE.svg)](https://github.com/commitshappen/DSCP-Partner-Portal-FE/issues) [![Waffle Board](https://img.shields.io/badge/waffle.io-Board-b3d4fc.svg)](https://waffle.io/commitshappen/DSCP-Partner-Portal-FE) [![AgileVentures Slack](https://img.shields.io/badge/AgileVentures-%23downtownstcharles-orange.svg)](https://www.agileventures.org/projects/dscp-partner-portal)
+
 # DSCP Partner Portal Front-End
 This front end, built on Angular 4 with the [Angular CLI](https://github.com/angular/angular-cli), will consume the DSCP Partner Portal API. All routes for this application should be protected via JWT, with no public API access. You will therefore need to authenticate any users before pulling data from the API.
 
@@ -10,7 +12,7 @@ The purpose of this project is to provide the DSCP with an internal application 
 The API for this project is hosted in a separate [GitHub repository](https://github.com/commitshappen/DSCP-Partner-Portal-API). If you're working on building services, you will need to clone the API and run it on your local machine. Simply follow the instructions of that README to get started.
 
 ## Contributing
-We'd love to have your help! Check out our Waffle Board to see where the project currently sits and what we're looking for help on. Do you have an idea that we maybe haven't thought of? That's cool too! Submit a ticket and we'll take a look :)
+We'd love to have your help! Check out our [Waffle Board](https://waffle.io/commitshappen/DSCP-Partner-Portal-FE) to see where the project currently sits and what we're looking for help on. Do you have an idea that we maybe haven't thought of? That's cool too! Submit a ticket and we'll take a look :)
 
 You can find the design prototype for the front-end by viewing the [design prototype](https://xd.adobe.com/view/287c1243-35f0-49f2-be73-94331ea84aae).
 
